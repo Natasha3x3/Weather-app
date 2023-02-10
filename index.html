@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0389a7d2a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <form id="form">
+          <input
+            type="text"
+            placeholder="Search for a city..."
+            class="searchbar"
+            autofocus="on"
+            autocomplete="off"
+            id="search-form"
+          />
+          <button type="submit" class="search" id="search-button">
+            Search
+          </button>
+        </form>
+        <button class="current-button" id="button-current">Curent</button>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/cloud.png" alt="cloud" class="current-temp-img" />
+          </div>
+          <div class="col-4 temperature">
+            <span class="current-temp" id="current-temperature">3</span>
+            <span class="units"
+              ><sup>
+                <a href="#" id="celsious-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </sup>
+            </span>
+          </div>
+          <div class="col-5 city" id="city">Krásno nad Kysucou</div>
+        </div>
+        <div class="row">
+          <div class="col date">
+            <div class="current-date" id="current-date">Friday 12:30</div>
+            <div id="description">Cloudy</div>
+          </div>
+          <div class="col precipitation">
+            Humidity: <span id="humidity">2</span> %<br />
+            Wind speed: <span id="wind">13</span> km/h
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <div class="future-date">Tomorrow</div>
+            <img
+              src="images/cloudy (1).png"
+              alt="sun-cloud"
+              class="future-weather"
+            />
+            <div class="future-degrees">6°</div>
+          </div>
+          <div class="col">
+            <div class="future-date">Sunday</div>
+            <img src="images/rain (1).png" alt="rainy" class="future-weather" />
+            <div class="future-degrees">5°</div>
+          </div>
+          <div class="col">
+            <div class="future-date">Monday</div>
+            <img src="images/rain (1).png" alt="rainy" class="future-weather" />
+            <div class="future-degrees">7°</div>
+          </div>
+          <div class="col">
+            <div class="future-date">Tuesday</div>
+            <img
+              src="images/cloudy (1).png"
+              alt="sun-cloud"
+              class="future-weather"
+            />
+            <div class="future-degrees">9°</div>
+          </div>
+          <div class="col">
+            <div class="future-date">Wednesday</div>
+            <img
+              src="images/cloudy (1).png"
+              alt="sun-cloud"
+              class="future-weather"
+            />
+            <div class="future-degrees">8°</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+form {
+  display: block;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #f3cdd5;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+.app {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 10px;
+  max-width: 550px;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  box-shadow: rgba(0, 0, 0, 0.348) 8px 6px 5px;
+  border-radius: 10px;
+
+  background: linear-gradient(to bottom, rgb(220 70 176), rgb(241, 95, 121));
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.search,
+.current-button {
+  float: right;
+  color: #000000ba;
+  border: 1px solid #000000ba;
+  box-shadow: rgba(0, 0, 0, 0.348) 7px 5px 8px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.search {
+  background-color: #9bc9ff;
+}
+
+.searchbar {
+  width: 80%;
+  background-color: #f3cdd5;
+  border: white;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.348) 7px 5px 8px;
+}
+
+.current-button {
+  background-color: #f8db5b;
+  margin-right: 10px;
+}
+
+.current-temp-img {
+  width: 85px;
+  display: block;
+  margin: 0 10px 0 0;
+  margin-top: 20px;
+}
+
+.temperature {
+  padding: 0;
+}
+
+.current-temp {
+  font-size: 63px;
+}
+
+.units {
+  font-size: 30px;
+}
+
+.city {
+  font-size: 23px;
+  margin-top: 20px;
+  color: #9bc9ff;
+  padding-left: 30px;
+
+  font-weight: 500;
+}
+
+.precipitation {
+  padding-left: 49px;
+}
+
+.future-date {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.future-weather {
+  width: 70px;
+  margin: 0 auto;
+}
+
+.future-degrees {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
